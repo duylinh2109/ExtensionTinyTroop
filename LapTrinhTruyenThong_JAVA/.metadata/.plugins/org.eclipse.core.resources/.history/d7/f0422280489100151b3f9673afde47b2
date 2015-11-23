@@ -1,0 +1,41 @@
+package sfs2x.extensions.games.projectfinal;
+
+import com.smartfoxserver.v2.entities.User;
+import com.smartfoxserver.v2.entities.data.ISFSObject;
+import com.smartfoxserver.v2.entities.data.SFSObject;
+import com.smartfoxserver.v2.extensions.BaseClientRequestHandler;
+
+public class PlayerGetConfig extends BaseClientRequestHandler {
+
+    private User whoseTurn;
+    
+	@Override
+	public void handleClientRequest(User user, ISFSObject params) {
+		
+		ProjectFinalExtension projExt = (ProjectFinalExtension)getParentExtension();
+		
+		trace("Get Config");
+		
+		ISFSObject resObj = new SFSObject();
+		
+		resObj.putInt("numplayer",projExt.arr_UsersIsReady.size() );
+        
+        for(int i=1; i<= projExt.arr_UsersIsReady.size(); i++)
+        {
+        	User u= projExt.arr_UsersIsReady.get(i-1);
+        	int playerId= u.getPlayerId();
+        	String keyName= "p"+i+ "n";
+        	String keyId = "p"+ i +"i";
+        	resObj.putUtfString(keyName, user.getName());
+        	resObj.putInt(keyId, playerId);
+        }
+
+        if (this.whoseTurn == null) {
+            this.whoseTurn = projExt.arr_UsersIsReady.get(0);
+            resObj.putInt("t", this.whoseTurn.getPlayerId());
+        }
+		
+        send(ConfigResponseCMD.cmd_getconfig, resObj, user);
+	}
+
+}

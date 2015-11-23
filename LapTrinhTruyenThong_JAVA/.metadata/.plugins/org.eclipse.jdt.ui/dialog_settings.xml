@@ -72,11 +72,10 @@
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
 			<item value="C:\Program Files\SmartFoxServer_2X\SFS2X\extensions\ProjectFinalExtension\projectfinalExtension.jar"/>
+			<item value="C:\Program Files\SmartFoxServer_2X\SFS2X\extensions\projectfinal\projectfinalExtension.jar"/>
 			<item value="C:\Program Files\SmartFoxServer_2X\SFS2X\extensions\Project4_Extension\projectfinalExtension.jar"/>
 			<item value="C:\Program Files\SmartFoxServer_2X\SFS2X\extensions\Project4Extension\projectfinalExtension.jar"/>
 			<item value="C:\Users\duylinh2109\Desktop\projectfinalExtension.jar"/>
-			<item value="C:\Program Files\SmartFoxServer_2X\SFS2X\extensions\projectfinal\projectfinalExtension.jar"/>
-			<item value="C:\Program Files\SmartFoxServer_2X\SFS2X\extensions\trisCopyExtension\TrisExtension.jar"/>
 		</list>
 	</section>
 	<section name="JavaElementSearchActions">

@@ -19,9 +19,7 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="org.matheclipse.parser.client.eval.ComplexEvaluator"/>
 <fullyQualifiedTypeName name="com.smartfoxserver.v2.extensions.SFSExtension"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Dictionary"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="com.duylinh2109.MathChallengeRequestHandler"/>
 <fullyQualifiedTypeName name="com.duylinh2109.Consts"/>
 <fullyQualifiedTypeName name="com.duylinh2109.MathChallengeAnswerRequesHandler"/>
@@ -34,7 +32,6 @@
 <fullyQualifiedTypeName name="com.smartfoxserver.v2.entities.data.SFSObject"/>
 <fullyQualifiedTypeName name="java.rmi.ConnectIOException"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.GetLeaderBoardHandler"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.sql.Array"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.ThachThucHandler"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.TrisExtension"/>
@@ -43,13 +40,22 @@
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.AgreeChallengeHandler"/>
-<fullyQualifiedTypeName name="com.smartfoxserver.v2.entities.User"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.HideMoveSkillHandler"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.Tile"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.tris.DaoNguocSkillHandler"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
-<fullyQualifiedTypeName name="com.smartfoxserver.v2.extensions.BaseClientRequestHandler"/>
-<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.ProjectFinalExtension"/>
 <fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.ConfigCmd"/>
 <fullyQualifiedTypeName name="com.smartfoxserver.v2.entities.Room"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.PlayerStartHandler"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.smartfoxserver.v2.entities.User"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.PlayerGetConfig"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.ConfigRequestHandlerCMD"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.PlayerMovingHandler"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.ProjectFinalExtension"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.ConfigResponseCMD"/>
+<fullyQualifiedTypeName name="com.smartfoxserver.v2.extensions.BaseClientRequestHandler"/>
+<fullyQualifiedTypeName name="sfs2x.extensions.games.projectfinal.PlayerTurnBaseHandler"/>
 </qualifiedTypeNameHistroy>

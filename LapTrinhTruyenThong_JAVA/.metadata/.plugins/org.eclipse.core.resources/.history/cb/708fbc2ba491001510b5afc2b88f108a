@@ -1,0 +1,33 @@
+package sfs2x.extensions.games.projectfinal;
+
+import com.smartfoxserver.v2.entities.User;
+import com.smartfoxserver.v2.entities.data.ISFSObject;
+import com.smartfoxserver.v2.entities.data.SFSObject;
+import com.smartfoxserver.v2.extensions.BaseClientRequestHandler;
+
+public class PlayerMovingHandler extends BaseClientRequestHandler {
+
+	@Override
+	public void handleClientRequest(User user, ISFSObject params) {
+		// TODO Auto-generated method stub
+		
+		ProjectFinalExtension projExt= (ProjectFinalExtension)getParentExtension();
+		
+		
+		ISFSObject resObj = new SFSObject();
+		
+		resObj.putFloat("px", params.getFloat("px"));
+		resObj.putFloat("py", params.getFloat("py"));
+		resObj.putFloat("pz", params.getFloat("pz"));
+		
+		resObj.putFloat("rx", params.getFloat("rx"));
+		resObj.putFloat("ry", params.getFloat("ry"));
+		resObj.putFloat("rz", params.getFloat("rz"));
+		
+		resObj.putInt("pi", user.getPlayerId());
+		resObj.putUtfString("pn", user.getName());
+		
+		send(ConfigResponseCMD.cmd_playermove, resObj, projExt.getParentRoom().getUserList());
+	}
+
+}
